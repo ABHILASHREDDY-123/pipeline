@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(morgan("tiny"))
 app.get("/",(req,res)=>{
     console.log("HOME ENCOUNTERED");
-    res.send({message : "Data acheived"})
+    res.send("HOME ENCOUNTERED");
 })
 app.use("/user",(req,res)=>{
     console.log("USER ROUTER ENCOUNTERED");
