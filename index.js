@@ -5,7 +5,7 @@ const PORT=8080
 app.use(express.json())
 app.use(morgan("tiny"))
 app.get("/",(req,res)=>{
-    console.log("HOME ENCOUNTERED");
+    console.log("HOME ");
     res.send("WELCOME HOME");
 })
 app.use("/user",(req,res)=>{
